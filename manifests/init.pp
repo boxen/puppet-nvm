@@ -20,7 +20,7 @@ class nvm {
   }
 
   file { $exec:
-    source => 'puppet:///modules/nvm/gh-nvm-exec.sh',
+    source => 'puppet:///modules/nvm/boxen-nvm-exec.sh',
     mode   => 0755
   }
 
