@@ -34,18 +34,18 @@ if [ -n "$file" ]; then
 fi
 
 if [ -z "$version" ]; then
-  version="$GH_NVM_DEFAULT_VERSION"
+  version="$BOXEN_NVM_DEFAULT_VERSION"
 fi
 
 # This doesn't support multilevel aliases. I'm lazy.
 
-alias="${GH_NVM_DIR}/alias/${version}"
+alias="${BOXEN_NVM_DIR}/alias/${version}"
 
 if [ -f  "$alias" ]; then
   version=`cat ${alias}`
 fi
 
-dir="${GH_NVM_DIR}/${version}"
+dir="${BOXEN_NVM_DIR}/${version}"
 
 if [ ! -d "$dir" ]; then
   echo "nvm doesn't know about ${version}."
