@@ -5,8 +5,9 @@ class nvm {
   $exec = "${boxen::config::bindir}/boxen-nvm-exec"
 
   repository { $dir:
-    require => File[$boxen::config::home],
-    source  => 'git://github.com/creationix/nvm.git'
+    require  => File[$boxen::config::home],
+    source   => 'creationix/nvm',
+    protocol => 'git'
   }
 
   file { "${dir}/alias":
