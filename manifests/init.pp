@@ -1,6 +1,5 @@
 class nvm {
   require github::config
-  require xcode
 
   $dir  = "${github::config::home}/nvm"
   $exec = "${github::config::bindir}/gh-nvm-exec"
