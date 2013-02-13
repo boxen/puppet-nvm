@@ -1,5 +1,5 @@
 class nvm {
-  require boxen::config
+  include boxen::config
 
   $dir  = "${boxen::config::home}/nvm"
   $exec = "${boxen::config::bindir}/boxen-nvm-exec"

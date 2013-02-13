@@ -1,4 +1,15 @@
 # Puppet nvm for Boxen
 
-FIXME: update me bro
+Installs nvm.
+
+## Usage
+
+``` puppet
+include nvm
+```
+
+## Required Puppet Modules
+
+* boxen
+* stdlib
 
