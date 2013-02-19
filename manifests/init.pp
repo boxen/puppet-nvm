@@ -7,7 +7,7 @@ class nvm {
   repository { $dir:
     require  => File[$boxen::config::home],
     source   => 'creationix/nvm',
-    protocol => 'git'
+    provider => 'git'
   }
 
   file { "${dir}/alias":
