@@ -19,7 +19,7 @@ fi
 
 dir="${BOXEN_NVM_DIR}/${version}"
 
-extra_paths=node_modules/.bin:$HOME/node_modules/.bin
+extra_paths=node_modules/.bin
 if [ -d "$dir" ]; then
   extra_paths=$extra_paths:$dir/bin
 fi
